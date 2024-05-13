@@ -8,7 +8,9 @@
   "type": "module",
   "devDependencies": {
     "@jsiqle/core": "^3.0.0",
+    "@types/node": "^20.12.11",
     "astro": "^4.0.0",
+    "astro-font": "^0.0.81",
     "chalk": "^5.3.0",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",

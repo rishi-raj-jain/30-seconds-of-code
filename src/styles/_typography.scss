@@ -1,6 +1,6 @@
 html {
   // Setup Inter as the default font.
-  font-family: 'Inter', Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
 
 body {

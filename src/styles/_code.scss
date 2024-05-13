@@ -1,6 +1,6 @@
 :is(pre, code, kbd) {
   // Setup Roboto Mono as the default font.
-  font-family: 'Roboto Mono', Menlo, Consolas, monospace;
+  font-family: var(--font-roboto);
 
   // Set a default font size (customized to code elements).
   font-size: var(--font-sm);
@@ -85,7 +85,7 @@ pre[data-code-title] {
     left: var(--layout-bleed-width);
 
     // Use the content font for the label, and make it bold.
-    font-family: 'Inter', Helvetica, sans-serif;
+    font-family: var(--font-inter);
     font-size: var(--font-sm);
     font-weight: var(--font-weight-strong);
 

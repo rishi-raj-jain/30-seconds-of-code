@@ -1,7 +1,9 @@
 ---
 import '../styles/index.scss';
 
+import { join } from 'node:path';
 import Meta from '#components/Meta';
+import { AstroFont } from "astro-font";
 import Footer from '#components/Footer';
 import Header from '#components/Header';
 import Omnisearch from '#components/Omnisearch';
@@ -27,6 +29,49 @@ const {
       structuredData={structuredData}
       breadcrumbsData={breadcrumbsData}
       canonical={canonical}
+    />
+    <AstroFont
+      config={[
+        {
+          src: [
+            {
+              style: 'normal',
+              weight: '100 1000',
+              path: join(process.cwd(), 'assets', 'Inter.var.woff2')
+            },
+          ],
+          name: "Inter",
+          preload: true,
+          display: "swap",
+          fallback: "sans-serif",
+          cssVariable: "font-inter",
+        },
+        {
+          src: [
+            {
+              preload: true,
+              style: 'normal',
+              weight: '400',
+              path: join(process.cwd(), 'assets', 'RobotoMono-Regular.woff2')
+            },
+            {
+              style: 'italic',
+              weight: '400',
+              path: join(process.cwd(), 'assets', 'RobotoMono-Italic.woff2')
+            },
+            {
+              style: 'normal',
+              weight: '500',
+              path: join(process.cwd(), 'assets', 'RobotoMono-Medium.woff2')
+            },
+          ],
+          preload: false,
+          display: "swap",
+          name: "Roboto_Mono",
+          fallback: "monospace",
+          cssVariable: "font-roboto",
+        },
+      ]}
     />
   </head>
   <body>

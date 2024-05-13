@@ -40,11 +40,11 @@ button {
 }
 
 [type='search']::-webkit-input-placeholder {
-  font-family: 'Inter', Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
 
 [type='search']::-moz-placeholder {
-  font-family: 'Inter', Helvetica, sans-serif;
+  font-family: var(--font-inter);
 }
 
 input,
